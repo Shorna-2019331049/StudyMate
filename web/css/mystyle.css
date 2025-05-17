@@ -1,0 +1,62 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 May 2023, 00:56:49
+    Author     : User
+*/
+body{
+    overflow: hidden;
+}
+/*body, html {
+    overflow: hidden;
+}*/
+
+.primary-background{
+    background:#3B5249!important;
+}
+
+.btn {
+    background-color: #2e7d32;
+    border: none;
+    color: white;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8
+}
+
+
+ .custom-button {
+    /* Add your custom button styles here */
+    background-color: #3B5249!important;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+ }
+ 
+ #slidewindow {
+    display: none;
+    position: fixed;
+    top: 55.6px;
+    left: 0;
+    width: 50%;
+    height: 130%;
+    background-color: #e8f0cc; /*Semi-transparent background */
+    z-index: 9999; /* Make sure the window appears above other elements */
+    overflow: hidden;
+    transition: left 0.3s ease;
+}
+
+#slidewindow.active {
+    display: block;
+}
+#slidewindow.inactive {
+    left: -50%; /* Hide the window off the left side of the screen */
+}
+
